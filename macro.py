@@ -1,3 +1,12 @@
+# pip install pywin32
+# pip install keyboard
+# pip install pyautogui
+# pip install opencv-python
+# pip install Pillow
+
+# https://github.com/KianBrose/Image-Recognition-Botting-Tutorial
+# https://teratail.com/questions/79973
+
 import pyautogui
 import keyboard
 import time
@@ -54,6 +63,8 @@ pyautogui.typewrite('\n\n\n')
 # pyautogui.keyDown('alt')
 # pyautogui.press('tab')
 # pyautogui.keyUp('alt')
+
+time.sleep(5)
 
 while keyboard.is_pressed('ctrl') == False:
     command = []
