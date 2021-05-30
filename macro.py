@@ -33,27 +33,33 @@ pyautogui.typewrite('\n\n\n')
 pyautogui.typewrite('def one():\n')
 pyautogui.typewrite('time.sleep(0.2)\n')
 pyautogui.typewrite('kbd.send(Keycode.ONE)\n')
+pyautogui.typewrite('time.sleep(0.1)\n')
 pyautogui.typewrite('\n\n\n')
 
 pyautogui.typewrite('def two():\n')
 pyautogui.typewrite('time.sleep(0.2)\n')
 pyautogui.typewrite('kbd.send(Keycode.TWO)\n')
+pyautogui.typewrite('time.sleep(0.1)\n')
 pyautogui.typewrite('\n\n\n')
 
 pyautogui.typewrite('def three():\n')
 pyautogui.typewrite('time.sleep(0.2)\n')
 pyautogui.typewrite('kbd.send(Keycode.THREE)\n')
+pyautogui.typewrite('time.sleep(0.1)\n')
 pyautogui.typewrite('\n\n\n')
 
 pyautogui.typewrite('def four():\n')
 pyautogui.typewrite('time.sleep(0.2)\n')
 pyautogui.typewrite('kbd.send(Keycode.FOUR)\n')
+pyautogui.typewrite('time.sleep(0.1)\n')
 pyautogui.typewrite('\n\n\n')
 
 # pyautogui.typewrite('main()\n')
 # pyautogui.keyDown('alt')
 # pyautogui.press('tab')
 # pyautogui.keyUp('alt')
+
+time.sleep(5)
 
 while keyboard.is_pressed('ctrl') == False:
     command = []
@@ -148,7 +154,7 @@ while keyboard.is_pressed('ctrl') == False:
 
     if len(command) > 0:
         pyautogui.typewrite('def main():\n')
-        pyautogui.typewrite('time.sleep(0.7)\n')
+        pyautogui.typewrite('time.sleep(1)\n')
         for cmd in command:
             pyautogui.typewrite(cmd)
             pass
@@ -158,6 +164,6 @@ while keyboard.is_pressed('ctrl') == False:
         pyautogui.keyDown('alt')
         pyautogui.press('tab')
         pyautogui.keyUp('alt')
-        time.sleep(5)
+        time.sleep(6)
         pass
 
