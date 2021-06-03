@@ -75,118 +75,118 @@ while keyboard.is_pressed('ctrl') == False:
     triple = False
     double = False
 
-    # 三連
+    # 二連
     # 左
-    if pyautogui.locateCenterOnScreen('one.png', grayscale=True, confidence=0.8, region=(768, 615, 50, 40)) != None:
+    if pyautogui.locateCenterOnScreen('one.png', grayscale=True, confidence=0.8, region=(850, 615, 50, 40)) != None:
         print("1")
         command.append('one()\n')
-        triple = True
+        double = True
         pass
-    elif pyautogui.locateCenterOnScreen('two.png', grayscale=True, confidence=0.8, region=(768, 615, 50, 40)) != None:
+    elif pyautogui.locateCenterOnScreen('two.png', grayscale=True, confidence=0.8, region=(850, 615, 50, 40)) != None:
         print("2")
         command.append('two()\n')
-        triple = True
+        double = True
         pass
-    elif pyautogui.locateCenterOnScreen('three.png', grayscale=True, confidence=0.8, region=(768, 615, 50, 40)) != None:
+    elif pyautogui.locateCenterOnScreen('three.png', grayscale=True, confidence=0.8, region=(850, 615, 50, 40)) != None:
         print("3")
         command.append('three()\n')
-        triple = True
+        double = True
         pass
-    elif pyautogui.locateCenterOnScreen('four.png', grayscale=True, confidence=0.8, region=(768, 615, 50, 40)) != None:
+    elif pyautogui.locateCenterOnScreen('four.png', grayscale=True, confidence=0.8, region=(850, 615, 50, 40)) != None:
         print("4")
         command.append('four()\n')
-        triple = True
+        double = True
         pass
     else:
         pass
 
-    if triple:
-        # 中央
-        if pyautogui.locateCenterOnScreen('one.png', grayscale=True, confidence=0.8, region=(932, 615, 50, 40)) != None:
-            print("1")
-            command.append('one()\n')
-            pass
-        elif pyautogui.locateCenterOnScreen('two.png', grayscale=True, confidence=0.8, region=(932, 615, 50, 40)) != None:
-            print("2")
-            command.append('two()\n')
-            pass
-        elif pyautogui.locateCenterOnScreen('three.png', grayscale=True, confidence=0.8, region=(932, 615, 50, 40)) != None:
-            print("3")
-            command.append('three()\n')
-            pass
-        elif pyautogui.locateCenterOnScreen('four.png', grayscale=True, confidence=0.8, region=(932, 615, 50, 40)) != None:
-            print("4")
-            command.append('four()\n')
-            pass
-        else:
-            pass
+    if double:
         # 右
-        if pyautogui.locateCenterOnScreen('one.png', grayscale=True, confidence=0.8, region=(1097, 615, 50, 40)) != None:
+        if pyautogui.locateCenterOnScreen('one.png', grayscale=True, confidence=0.8, region=(1015, 615, 50, 40)) != None:
             print("1")
             command.append('one()\n')
+            double = True
             pass
-        elif pyautogui.locateCenterOnScreen('two.png', grayscale=True, confidence=0.8, region=(1097, 615, 50, 40)) != None:
+        elif pyautogui.locateCenterOnScreen('two.png', grayscale=True, confidence=0.8, region=(1015, 615, 50, 40)) != None:
             print("2")
             command.append('two()\n')
+            double = True
             pass
-        elif pyautogui.locateCenterOnScreen('three.png', grayscale=True, confidence=0.8, region=(1097, 615, 50, 40)) != None:
+        elif pyautogui.locateCenterOnScreen('three.png', grayscale=True, confidence=0.8, region=(1015, 615, 50, 40)) != None:
             print("3")
             command.append('three()\n')
+            double = True
             pass
-        elif pyautogui.locateCenterOnScreen('four.png', grayscale=True, confidence=0.8, region=(1097, 615, 50, 40)) != None:
+        elif pyautogui.locateCenterOnScreen('four.png', grayscale=True, confidence=0.8, region=(1015, 615, 50, 40)) != None:
             print("4")
             command.append('four()\n')
+            double = True
             pass
         else:
             pass
         pass
     else:
-        # 二連
+        # 三連
         # 左
-        if pyautogui.locateCenterOnScreen('one.png', grayscale=True, confidence=0.8, region=(850, 615, 50, 40)) != None:
+        if pyautogui.locateCenterOnScreen('one.png', grayscale=True, confidence=0.8, region=(768, 615, 50, 40)) != None:
             print("1")
             command.append('one()\n')
-            double = True
+            triple = True
             pass
-        elif pyautogui.locateCenterOnScreen('two.png', grayscale=True, confidence=0.8, region=(850, 615, 50, 40)) != None:
+        elif pyautogui.locateCenterOnScreen('two.png', grayscale=True, confidence=0.8, region=(768, 615, 50, 40)) != None:
             print("2")
             command.append('two()\n')
-            double = True
+            triple = True
             pass
-        elif pyautogui.locateCenterOnScreen('three.png', grayscale=True, confidence=0.8, region=(850, 615, 50, 40)) != None:
+        elif pyautogui.locateCenterOnScreen('three.png', grayscale=True, confidence=0.8, region=(768, 615, 50, 40)) != None:
             print("3")
             command.append('three()\n')
-            double = True
+            triple = True
             pass
-        elif pyautogui.locateCenterOnScreen('four.png', grayscale=True, confidence=0.8, region=(850, 615, 50, 40)) != None:
+        elif pyautogui.locateCenterOnScreen('four.png', grayscale=True, confidence=0.8, region=(768, 615, 50, 40)) != None:
             print("4")
             command.append('four()\n')
-            double = True
+            triple = True
             pass
         else:
             pass
 
-        if double:
-            # 右
-            if pyautogui.locateCenterOnScreen('one.png', grayscale=True, confidence=0.8, region=(1015, 615, 50, 40)) != None:
+        if triple:
+            # 中央
+            if pyautogui.locateCenterOnScreen('one.png', grayscale=True, confidence=0.8, region=(932, 615, 50, 40)) != None:
                 print("1")
                 command.append('one()\n')
-                double = True
                 pass
-            elif pyautogui.locateCenterOnScreen('two.png', grayscale=True, confidence=0.8, region=(1015, 615, 50, 40)) != None:
+            elif pyautogui.locateCenterOnScreen('two.png', grayscale=True, confidence=0.8, region=(932, 615, 50, 40)) != None:
                 print("2")
                 command.append('two()\n')
-                double = True
                 pass
-            elif pyautogui.locateCenterOnScreen('three.png', grayscale=True, confidence=0.8, region=(1015, 615, 50, 40)) != None:
+            elif pyautogui.locateCenterOnScreen('three.png', grayscale=True, confidence=0.8, region=(932, 615, 50, 40)) != None:
                 print("3")
                 command.append('three()\n')
-                double = True
                 pass
-            elif pyautogui.locateCenterOnScreen('four.png', grayscale=True, confidence=0.8, region=(1015, 615, 50, 40)) != None:
+            elif pyautogui.locateCenterOnScreen('four.png', grayscale=True, confidence=0.8, region=(932, 615, 50, 40)) != None:
                 print("4")
                 command.append('four()\n')
-                double = True
+                pass
+            else:
+                pass
+            # 右
+            if pyautogui.locateCenterOnScreen('one.png', grayscale=True, confidence=0.8, region=(1097, 615, 50, 40)) != None:
+                print("1")
+                command.append('one()\n')
+                pass
+            elif pyautogui.locateCenterOnScreen('two.png', grayscale=True, confidence=0.8, region=(1097, 615, 50, 40)) != None:
+                print("2")
+                command.append('two()\n')
+                pass
+            elif pyautogui.locateCenterOnScreen('three.png', grayscale=True, confidence=0.8, region=(1097, 615, 50, 40)) != None:
+                print("3")
+                command.append('three()\n')
+                pass
+            elif pyautogui.locateCenterOnScreen('four.png', grayscale=True, confidence=0.8, region=(1097, 615, 50, 40)) != None:
+                print("4")
+                command.append('four()\n')
                 pass
             else:
                 pass
@@ -226,6 +226,6 @@ while keyboard.is_pressed('ctrl') == False:
         pyautogui.keyDown('alt')
         pyautogui.press('tab')
         pyautogui.keyUp('alt')
-        time.sleep(6)
+        time.sleep(5)
         pass
 
