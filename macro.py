@@ -262,6 +262,31 @@ while keyboard.is_pressed('ctrl') == False:
             pass
         pass
 
+    # ダブルが終わった後、トリプルじゃなかったか確認
+    if double:
+        isNG = False
+        # 四連
+        # 左外
+        if pyautogui.locateCenterOnScreen('one.png', grayscale=True, confidence=0.8, region=(686, 615, 50, 40)) != None:
+            isNG = True
+            pass
+        elif pyautogui.locateCenterOnScreen('two.png', grayscale=True, confidence=0.8, region=(686, 615, 50, 40)) != None:
+            isNG = True
+            pass
+        elif pyautogui.locateCenterOnScreen('three.png', grayscale=True, confidence=0.8, region=(686, 615, 50, 40)) != None:
+            isNG = True
+            pass
+        elif pyautogui.locateCenterOnScreen('four.png', grayscale=True, confidence=0.8, region=(686, 615, 50, 40)) != None:
+            isNG = True
+            pass
+        else:
+            pass
+        pass
+        
+        # トリプルだったらやり直し
+        if isNG:
+            continue
+
     if len(command) > 0:
         args = ''
         for cmd in command:
