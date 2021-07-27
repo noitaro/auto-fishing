@@ -24,7 +24,7 @@ pyautogui.typewrite('from adafruit_hid.keycode import Keycode\n')
 pyautogui.typewrite('kbd = Keyboard(usb_hid.devices)\n')
 
 pyautogui.typewrite('def i(*args):\n')
-pyautogui.typewrite('time.sleep(0.5)\n')
+pyautogui.typewrite('time.sleep(0.2)\n')
 pyautogui.typewrite('for arg in args:\n')
 pyautogui.typewrite('if arg == 1:\n')
 pyautogui.typewrite('kbd.press(Keycode.ONE)\n')
