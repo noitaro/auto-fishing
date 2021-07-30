@@ -11,6 +11,31 @@ import pyautogui
 import keyboard
 import time
 
+# 画像
+ONE_IMG = 'one.png'     # 1
+TWO_IMG = 'two.png'     # 2
+THREE_IMG = 'three.png'  # 3
+FOUR_IMG = 'four.png'   # 4
+
+# 判定比率
+CONFIDENCE = 0.8
+
+# Y軸
+_Y = 615
+
+# サイズ
+_WIDTH = 50
+_HEIGHT = 40
+
+# QET
+QUADRUPLE_LEFT_OUTSIDE_X = 686   # 四連左外
+TRIPLE_LEFT_X = 768              # 三連左
+QUADRUPLE_LEFT_INSIDE_X = 850    # 四連左中
+TRIPLE_CENTER_X = 932            # 三連中
+QUADRUPLE_RIGHT_INSIDE_X = 1015  # 四連右中
+TRIPLE_RIGHT_X = 1097            # 三連右
+QUADRUPLE_RIGHT_OUTSIDE_X = 1179 # 四連右外
+
 def main():
 
     pyautogui.hotkey('alt', 'tab')
@@ -67,31 +92,6 @@ def main():
     pyautogui.typewrite('\n\n\n')
 
     time.sleep(5)
-
-    # 画像
-    ONE_IMG = 'one.png'     # 1
-    TWO_IMG = 'two.png'     # 2
-    THREE_IMG = 'three.png'  # 3
-    FOUR_IMG = 'four.png'   # 4
-
-    # 判定比率
-    CONFIDENCE = 0.8
-
-    # Y軸
-    _Y = 615
-
-    # サイズ
-    _WIDTH = 50
-    _HEIGHT = 40
-
-    # QET
-    QUADRUPLE_LEFT_OUTSIDE_X = 686   # 四連左外
-    TRIPLE_LEFT_X = 768              # 三連左
-    QUADRUPLE_LEFT_INSIDE_X = 850    # 四連左中
-    TRIPLE_CENTER_X = 932            # 三連中
-    QUADRUPLE_RIGHT_INSIDE_X = 1015  # 四連右中
-    TRIPLE_RIGHT_X = 1097            # 三連右
-    QUADRUPLE_RIGHT_OUTSIDE_X = 1179 # 四連右外
 
     oldargs = ''
     while keyboard.is_pressed('ctrl') == False:
