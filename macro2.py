@@ -17,7 +17,7 @@ def send_keys(element, message):
     element.send_keys(message)
     element.send_keys(Keys.ENTER)
 
-driver = webdriver.Chrome(executable_path="D:\Python\chromedriver_win32\chromedriver.exe")
+driver = webdriver.Chrome(executable_path="C:\\Users\\katof\\Desktop\\auto-fishing\\chromedriver.exe")
 
 driver.get("https://googlechromelabs.github.io/serial-terminal/")
 
