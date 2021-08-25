@@ -338,3 +338,6 @@ while keyboard.is_pressed('ctrl') == False:
             send_keys(terminal, 'i(*[' + args + '])')
             time.sleep(1)
             pass
+
+driver.close()
+driver.quit()
