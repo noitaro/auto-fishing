@@ -9,6 +9,7 @@
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
 import pyautogui
 import keyboard
 import time
@@ -17,16 +18,16 @@ def send_keys(element, message):
     element.send_keys(message)
     element.send_keys(Keys.ENTER)
 
-driver = webdriver.Chrome(executable_path="C:\\Users\\katof\\Desktop\\auto-fishing\\chromedriver_100.0.4896.60.exe")
+driver = webdriver.Chrome()
 
 driver.get("https://googlechromelabs.github.io/serial-terminal/")
 
-connectBtn = driver.find_element_by_xpath("//*[@id='connect']")
+connectBtn = driver.find_element(By.XPATH, "//*[@id='connect']")
 connectBtn.click()
 
 time.sleep(5)
 
-terminal = driver.find_element_by_xpath("//*[@id='terminal']/div/div[2]/div/textarea")
+terminal = driver.find_element(By.XPATH, "//*[@id='terminal']/div/div[2]/div/textarea")
 
 # 初期化
 terminal.send_keys(Keys.CONTROL, "d")
