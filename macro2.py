@@ -83,29 +83,33 @@ terminal.send_keys(Keys.ENTER)
 time.sleep(5)
 
 # 画像
-ONE_IMG = 'one.png'     # 1
-TWO_IMG = 'two.png'     # 2
+ONE_IMG = 'one.png'      # 1
+TWO_IMG = 'two.png'      # 2
 THREE_IMG = 'three.png'  # 3
-FOUR_IMG = 'four.png'   # 4
+FOUR_IMG = 'four.png'    # 4
 
 # 判定比率
 CONFIDENCE = 0.8
 
+# 1280 x 800
+OFFSET_X = 0
+OFFSET_Y = 0
+
 # Y軸
-_Y = 615
+_Y = 603 + OFFSET_Y
 
 # サイズ
 _WIDTH = 50
 _HEIGHT = 40
 
 # QET
-QUADRUPLE_LEFT_OUTSIDE_X = 686   # 四連左外
-TRIPLE_LEFT_X = 768              # 三連左
-QUADRUPLE_LEFT_INSIDE_X = 850    # 四連左中
-TRIPLE_CENTER_X = 932            # 三連中
-QUADRUPLE_RIGHT_INSIDE_X = 1015  # 四連右中
-TRIPLE_RIGHT_X = 1097            # 三連右
-QUADRUPLE_RIGHT_OUTSIDE_X = 1179 # 四連右外
+QUADRUPLE_LEFT_OUTSIDE_X = 686 + OFFSET_X   # 四連左外
+TRIPLE_LEFT_X = 797 + OFFSET_X              # 三連左
+QUADRUPLE_LEFT_INSIDE_X = 850 + OFFSET_X    # 四連左中
+TRIPLE_CENTER_X = 938 + OFFSET_X            # 三連中
+QUADRUPLE_RIGHT_INSIDE_X = 1015 + OFFSET_X  # 四連右中
+TRIPLE_RIGHT_X = 1089 + OFFSET_X            # 三連右
+QUADRUPLE_RIGHT_OUTSIDE_X = 1179 + OFFSET_X # 四連右外
 
 oldargs = ''
 while keyboard.is_pressed('ctrl') == False:
@@ -113,6 +117,9 @@ while keyboard.is_pressed('ctrl') == False:
     triple = False
     double = False
     quadruple = False
+
+    # screen_shot = pyautogui.screenshot() 
+    # screen_shot.save('test.png')
 
     # 四連
     # 左外
