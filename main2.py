@@ -199,7 +199,8 @@ while True:
         # cv2.imwrite(f'imwrite\image_{now.strftime("%Y%m%d%H%M%S")}_{"".join(map(str, key_press))}.png', image_data, [cv2.IMWRITE_PNG_COMPRESSION, 0])
 
         for key in key_press:
-            pydirectinput.press(key)
+            pydirectinput.keyDown(key)
+            pydirectinput.keyUp(key)
             pass
         pass
 
