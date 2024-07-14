@@ -1,6 +1,6 @@
 # pip install pywin32
 from cv2 import Mat
-import win32api
+import win32api # pip install pywin32
 import win32con
 import ctypes
 import time
@@ -37,15 +37,15 @@ template_image = [image_one, image_two, image_three, image_four]
 #     _, max_val, _, _ = cv2.minMaxLoc(result)
 #     return 0.8 < max_val
 
-# 1280 x 800
-y, w, h = 605, 25, 29
-x1_1 = 732
-x2_1 = 806
-x1_2 = 878
+# 1600 x 900
+y, w, h = 617, 25, 29
+x1_1 = 705
+x2_1 = 787
+x1_2 = 869
 x2_2 = 952
-x1_3 = 1024
-x2_3 = 1098
-x1_4 = 1171
+x1_3 = 1034
+x2_3 = 1117
+x1_4 = 1198
 
 while True:
 
